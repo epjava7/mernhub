@@ -5,7 +5,7 @@ let person1 = {
   height: 5.3,
 }
 
-let person2 = Object.create(person1) // creates a shallow copy
+let person2 = new Object(person1) // creates a shallow copy
 person2.height = 7.5 // Overwrite property, changes are reflected in person1
 
 let person3 = Object.create(person2) // creates a deep copy
