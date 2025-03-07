@@ -1,9 +1,20 @@
+let accountDatabase = {
+  ericaccount456: {
+    id: 123,
+    username: 'eric123',
+  },
+}
+
 let user = {
   name: 'Eric',
   age: 25,
-  accountId: 'ericaccount',
+  accountId: 'ericaccount456',
   printInfo: function () {
-    console.log(`Finding your student id ${this.name}`)
+    console.log(`Finding your student id ${this.name} ...`)
+
+    setTimeout(function () {
+      console.log(`...`)
+    }, 1000)
 
     setTimeout(
       function () {
@@ -17,10 +28,3 @@ let user = {
 }
 
 user.printInfo()
-
-let accountDatabase = {
-  ericaccount: {
-    id: 123,
-    username: 'eric123',
-  },
-}
