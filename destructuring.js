@@ -40,10 +40,10 @@ console.log(d) // [4, 5, 6]
 
 // 3
 
-function multiply(a, b, c) {
-  if (!a || !b || !c) {
-    return 0
-  }
+function multiply(a = 0, b = 0, c = 0) {
+  // if (!a || !b || !c) {
+  //   return 0
+  // }
   return a * b * c
 }
 
